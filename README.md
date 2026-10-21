@@ -10,7 +10,7 @@ A comprehensive Recipe management web application built with an ASP.NET Core Web
 ## 🛠️ Tech Stack
 - **Frontend:** React.js, JavaScript (ES6+), CSS3
 - **Backend:** ASP.NET Core Web API (.NET / C#)
-- **Database:** MySQL / SQL Server
+- **Database:** MySQL 
 
 ## ⚙️ Local Configuration & Setup
 
