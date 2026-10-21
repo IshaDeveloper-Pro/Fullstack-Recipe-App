@@ -19,5 +19,5 @@ A comprehensive Recipe management web application built with an ASP.NET Core Web
 2. Update your connection string in `appsettings.Development.json`:
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "server=localhost;database=RecipeDb;user=MY-USERNAME;password=YOUR_PASSWORD;"
+     "DefaultConnection": "server=localhost;database=RecipeDb;user=MY-USERNAME;password=MY_PASSWORD;"
    }
