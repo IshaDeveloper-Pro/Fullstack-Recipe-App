@@ -11,3 +11,227 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.searchBar{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+}
+.searchBar input{
+  width: 400px;
+  padding: 9px;
+  font-size: 22px;
+  border: none;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+.searchBar button {
+    background-color: #ffa502;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchBar button:hover {
+    background-color: #e17055;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.meals{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: center;
+  width: 90%;
+  /* background-color: blueviolet; */
+  margin: auto;
+  margin-top: 44px;
+
+}
+.meals img{
+  width: 100%;
+  height: 270px;
+ border-top-left-radius: 11px;
+ border-top-right-radius: 11px;
+
+}
+.mealImg{
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  border-radius: 11px;
+}
+.mealImg p{
+  font-weight: 600;
+}
+.mealImg button{
+  width: 120px;
+  background-color: orange;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+}
+ .mealInfo img{
+  width: 400px;
+  height: 400px;
+  border-radius: 11px;
+ }
+ .mealInfo {
+  /* width: 90%; */
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  gap: 22px;
+  justify-content:center ;
+  align-items: center;
+  background-color: rgb(255, 181, 42);
+  padding: 32px;
+ }
+ .mealInfo button{
+  border: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 19px;
+  background-color: orangered;
+  color: #fff;
+ }
+.mealInfo .info{
+  margin-top: -112px;
+}
+.msg{
+  text-align: center;
+}
+.head{
+  text-align: center;
+}
+button {
+    cursor: pointer;
+}
+.backBtn {
+    background-color: #3828ac !important; /* Purpleish color */
+    color: white !important;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.backBtn:hover {
+    background-color: #1f165a !important;
+}
+
+.bottomBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.head {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+
+  /* Black base color with Orange wave flow */
+  background: linear-gradient(
+    90deg, 
+    #111111 0%, 
+    #111111 40%, 
+    #ff7675 50%, 
+    #ff9f43 55%, 
+    #111111 65%, 
+    #111111 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Animation loop */
+  animation: shine 3s linear infinite;
+}
+
+/* Keyframes for Left to Right Motion */
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .head {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+
+  .searchBar {
+    width: 90%;
+    margin: 15px auto 0 auto;
+  }
+
+  .searchBar input {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .searchBar button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .meals {
+    width: 100%;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .mealImg {
+    width: 90%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  .mealImg img {
+    height: 220px;
+  }
+
+  .mealInfo {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .mealInfo img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .mealInfo .info {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .bottomBtnContainer {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
